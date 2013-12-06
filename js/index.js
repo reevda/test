@@ -49,6 +49,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
 //        console.log('Received Event: ' + id);
+        navigator.notification.vibrate(500);
         navigator.notification.alert(
                 'You are the winner!',  // message
                 alertDismissed,         // callback
@@ -63,7 +64,7 @@ var app = {
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
         scanner.scan( function (result) { 
-        	navigator.notification.vibrate(1000);
+        	navigator.notification.vibrate(500);
         	navigator.notification.alert(
     	            'You are the winner!',  // message
     	            alertDismissed,         // callback
@@ -89,6 +90,7 @@ var app = {
             */
 
         }, function (error) { 
+        	navigator.notification.vibrate(1500);
             console.log("Scanning failed: ", error); 
         } );
     },
