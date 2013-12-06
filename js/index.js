@@ -49,13 +49,14 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
 //        console.log('Received Event: ' + id);
-        navigator.notification.vibrate(500);
-        navigator.notification.alert(
-                'You are the winner!',  // message
-                alertDismissed,         // callback
-                'Game Over',            // title
-                'Done'                  // buttonName
-            );
+//        navigator.notification.vibrate(500);
+//        navigator.notification.alert(
+//                'You are the winner!',  // message
+//                alertDismissed,         // callback
+//                'Game Over',            // title
+//                'Done'                  // buttonName
+//            );
+        alert('receivedEvent '+id);
     },
 
     scan: function() {
