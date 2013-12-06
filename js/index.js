@@ -57,9 +57,15 @@ var app = {
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
         scanner.scan( function (result) { 
-
-        	alert('result OK '+result );
-        	/*alert("We got a barcode\n" + 
+        	navigator.notification.vibrate(1000);
+        	navigator.notification.alert(
+    	            'You are the winner!',  // message
+    	            alertDismissed,         // callback
+    	            'Game Over',            // title
+    	            'Done'                  // buttonName
+    	        );
+        	/*alert('result OK '+result );
+        	alert("We got a barcode\n" + 
             "Result: " + result.text + "\n" + 
             "Format: " + result.format + "\n" + 
             "Cancelled: " + result.cancelled);  
