@@ -58,7 +58,7 @@ var app = {
 
         scanner.scan( function (result) { 
         	navigator.notification.vibrate(500);
-        	navigator.notification.alert(
+        	alert(
     	            'You are the winner!',  // message
     	            alertDismissed,         // callback
     	            'Game Over',            // title
