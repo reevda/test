@@ -49,6 +49,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
 //        console.log('Received Event: ' + id);
+        alert('recieved event: '+id);
         navigator.notification.alert(
                 'You are the winner!',  // message
                 alertDismissed,         // callback
