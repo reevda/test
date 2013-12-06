@@ -58,12 +58,13 @@ var app = {
 
         scanner.scan( function (result) { 
 
-            alert("We got a barcode\n" + 
+        	alert('result OK '+result );
+        	/*alert("We got a barcode\n" + 
             "Result: " + result.text + "\n" + 
             "Format: " + result.format + "\n" + 
             "Cancelled: " + result.cancelled);  
 
-            /*console.log("Scanner result: \n" +
+            console.log("Scanner result: \n" +
                 "text: " + result.text + "\n" +
                 "format: " + result.format + "\n" +
                 "cancelled: " + result.cancelled + "\n");
