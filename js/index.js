@@ -58,19 +58,13 @@ var app = {
 
         scanner.scan( function (result) { 
         	navigator.notification.vibrate(500);
-        	alert(
-    	            'You are the winner!',  // message
-    	            alertDismissed,         // callback
-    	            'Game Over',            // title
-    	            'Done'                  // buttonName
-    	        );
-        	/*alert('result OK '+result );
+//        	alert('result OK '+result );
         	alert("We got a barcode\n" + 
             "Result: " + result.text + "\n" + 
             "Format: " + result.format + "\n" + 
             "Cancelled: " + result.cancelled);  
 
-            console.log("Scanner result: \n" +
+            /*console.log("Scanner result: \n" +
                 "text: " + result.text + "\n" +
                 "format: " + result.format + "\n" +
                 "cancelled: " + result.cancelled + "\n");
