@@ -47,7 +47,7 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-
+        navigator.notification.vibrate(1000);
 //        console.log('Received Event: ' + id);
     },
 
